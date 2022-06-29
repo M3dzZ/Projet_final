@@ -7,6 +7,7 @@ import Signup from './pages/Signup/Signup'
 import User from './pages/User/User'
 import Home from './pages/Home/Home'
 import Personalization from './pages/Personalization/Personalization'
+import Quests from './pages/Quests/Quests'
 
 function App() {
   const isLoggedIn = localStorage.getItem('token') !== null
@@ -24,7 +25,7 @@ function App() {
 
           {/*<Route path="/" element={<Home />} />*/}
           {/*<Route path="/search" element={<Search />} />*/}
-          {/*<Route path="/quests" element={<Quests />} />*/}
+          <Route path="/quests" element={<Quests />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
