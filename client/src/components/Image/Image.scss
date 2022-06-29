@@ -1,0 +1,30 @@
+@import '../../styles/global.scss';
+
+.rectangle__card-container {
+  margin: 12px 24px;
+  & > .rectangle__card {
+    height: 6.625rem;
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid #1d094e;
+    box-sizing: border-box;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    &__title {
+      background-color: $yellow;
+      position: absolute;
+      width: 190px;
+      height: 24px;
+      border-radius: 0px 8px 8px 0px;
+      margin-top: 7px;
+      display: flex;
+      align-items: center;
+      padding-left: 7px;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
