@@ -5,6 +5,7 @@ function Objective() {
   return (
     <div className="quest">
       <div className="box__quest">
+        <div className="test"></div>
         <div className="trash">
           <div className="trash__content">
             <svg

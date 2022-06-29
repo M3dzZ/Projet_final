@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Objective from '../../components/Objective/Objective'
 import Card from '../../components/Card/Card'
+import Event from '../../components/event/event'
+import Dail from '../../components/daily/daily'
 import Image from '../../components/Image/Image'
 import './Quests.scss'
 
@@ -9,34 +10,20 @@ function Daily() {
   return (
     <div className="quests-page">
       <div className="quests-page__header">
-        <h3
-          className="quests-page__header--title quests-page__header--target"
-          onClick={() => setState('daily')}
-        >
-          Daily
-        </h3>
-        <h3
-          className="quests-page__header--title quests-page__header--target"
-          onClick={() => setState('event')}
-        >
-          Évènements
-        </h3>
+        <h2 className="quests-page__header--title" onClick={() => setState('daily')}> Daily </h2>
+        <h2 className="quests-page__header--title" onClick={() => setState('event')}> Évènements </h2>
       </div>
 
       {(state === 'daily' && <Card />) || (state === 'event' && <Image />)}
 
       <div className="quests-page__footer">
-        <div className="line"></div>
-        <h3 className="quests-page__footer">Quêtes de la journée</h3>
-        <div className="line"></div>
+        <div className="quests-page__footer--line"></div>
+        <h3 className="quests-page__footer--title">Quêtes de la journée</h3>
+        <div className="quests-page__footer--line"></div>
       </div>
 
-      <div className="Card__quest__parent">
-        <Objective />
-        <Objective />
-        <Objective />
-        <Objective />
-      </div>
+      {(state === 'daily' && <Dail />) || (state === 'event' && <Event />)}
+      
     </div>
   )
 }

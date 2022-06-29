@@ -9,7 +9,8 @@
   width: 100vw;
   border-radius: 4px;
   border: 2px solid #1d094e;
-  
+  background-image: url(https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80);
+  background-size: cover; 
 }
 
 .trash{
@@ -26,10 +27,18 @@
     border-radius: 4px;
     background-color: #1d094e;
     position: absolute;
-    top: 67px;
+    top: -24px;
     right: 0;
 }
 
 .trash__icon{
     color: white;
+}
+
+.test {
+  background: url('../../assets/images/lock.svg') rgba(0, 0, 0, 0.5)
+          no-repeat center center;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
 }

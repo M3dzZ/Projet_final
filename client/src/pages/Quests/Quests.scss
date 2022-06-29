@@ -2,48 +2,37 @@
 
 .quests-page {
   background-color: $sky;
-  height: 100vh;
-  width: 100%;
+
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     &--title {
       color: $purple;
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    &--target:target {
-      text-decoration: underline;
+      padding: 40px 0;
+      margin: 0;
     }
   }
-  &__content {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-    padding: 0px 24px;
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 12px;
-    color: $purple;
+    &__footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 24px 0;
+      box-sizing: border-box;
+      color: $purple;
+  
+      &--line {
+        height: 1px;
+        width: 60px;
+        background-color: $purple;
+      }
+  
+      &--title {
+        margin: 0;
+      }
 
-    .line {
-      height: 1px;
-      width: 60px;
-      background-color: $purple;
+
     }
-  }
-  .Card__quest__parent {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 100%;
-    height: fit-content;
-    background-color: white;
-    border-radius: 16px;
-    padding: 12px 24px;
-  }
 }
+
